@@ -24,7 +24,7 @@ CurrentDate.innerHTML = moment().format('ll');
 StartWork.addEventListener("click", function () {
     var currentTime = moment().format();
     var current = moment().format('LTS');
-    TimeStart = currentTime;
+    TimeStart = current;
     Message.innerHTML = ("You Started Work at " + current);
     console.log(TimeStart);
     setTimeout(function () {
@@ -35,7 +35,7 @@ StartWork.addEventListener("click", function () {
 EndWork.addEventListener("click", function () {
     var currentTime = moment().format();
     var current = moment().format('LTS');
-    EnWork =currentTime;
+    EnWork =current;
     console.log(EndWork);
     if (TimeStart == undefined) {
         Message.innerHTML = ("Please Clock in First!! ");
@@ -52,7 +52,10 @@ EndWork.addEventListener("click", function () {
 
 EndMeal.addEventListener("click", function () {
     var compare = moment(Mealtime).fromNow();
+    var current = moment().format('LTS');
+   
     if (compare == "30 minutes ago") {
+        BackOn = current;
         Message.innerHTML = ("Succsessfully Clocked Back In");
         BackOn = moment().format();
         setTimeout(function () {
@@ -84,7 +87,7 @@ EndMeal.addEventListener("click", function () {
 StartMeal.addEventListener("click", function () {
     var currentTime = moment().format();
     var current = moment().format('LTS');
-    Mealtime = currentTime;
+    
     console.log(Mealtime);
     if (TimeStart == undefined) {
         Message.innerHTML = ("Please Clock in First!! ");
@@ -93,6 +96,7 @@ StartMeal.addEventListener("click", function () {
         }, 3000);
     }
     else {
+        Mealtime = current;
         Message.innerHTML = ("You Started Lunch at " + current);
         setTimeout(function () {
             Message.innerHTML = '';
