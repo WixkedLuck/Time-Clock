@@ -26,7 +26,7 @@ The purpose of this project is to make a functional timeclock that uses moment.j
 ![TimeClock](./Assets/Images/time.PNG)
 
 # Deployed Site 
-https://wixkedluck.github.io/Weather-Dashboard/
+https://wixkedluck.github.io/Time-Clock/
 
 
 
