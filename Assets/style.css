@@ -1,1 +1,54 @@
+body{
+    
+    background-size: cover;
+}
+header{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center; 
+    width: fit-content;
+    margin: auto;
+}
 
+.Content{
+    margin: auto;
+    width: fit-content;
+    
+    
+    
+}
+button{
+ background-color: ghostwhite;
+ font-size: 40px;
+ width: 250px;
+ margin: 20px;
+ color: black;
+}
+button:hover{
+ background-color: grey;
+}
+.back{
+   position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+#Message{
+    color: red;
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back{
+        width: auto;
+        height: 100%;
+    }
+}

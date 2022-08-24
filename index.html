@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Clock</title>
+    <link rel="stylesheet" href="./Assets/style.css">
+</head>
+<body>
+    <div class="background">
+        <video autoplay loop muted plays-inline class="back">
+            <source src="./Assets/Images/work.mp4" type="video/mp4">
+        </video>
+    </div>
+    <header class="RealTime">
+        <h1 id="CurrentTime"></h1>
+        <h2 id="CurrentDate"></h2>
+    </header>
+    <section id="Home" class="Content">
+        <button type="button" id="StartWork">Start Work</button><br>
+        <button type="button" id="StartMeal">Start Meal</button><br>
+        <button type="button" id="EndMeal">End Meal</button><br>
+        <button type="button" id="EndWork">End Work</button><br>
+        <button type="button" id="Info">Get Info</button>
+    </section>
+    <h2 id="Message"></h2>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./Assets/script.js"></script>
+</body>
+
+</html>
