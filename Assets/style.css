@@ -17,7 +17,7 @@ header{
     
     
 }
-button{
+.Mainbtn{
  background-color: ghostwhite;
  font-size: 40px;
  width: 250px;
@@ -39,6 +39,25 @@ button:hover{
     width: fit-content;
     margin: auto;
 }
+aside{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.display{
+    color: whitesmoke;
+    width: 100%;
+    font-size: 30px;
+    padding: 10px;
+    background-color: rgb(122, 120, 120);
+    border: solid black 3px;
+    border: inset;
+   
+}
+
+  
+  
 
 @media (min-aspect-ratio: 16/9){
     .back{
