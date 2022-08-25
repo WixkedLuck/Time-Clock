@@ -23,10 +23,10 @@ Clone the repository on GitHub then open Git on your local machine. First find a
 # Usage 
 The purpose of this project is to make a functional timeclock that uses moment.js for time. 
 
-![Challange6-WeatherAPI](./Assets/Images/timeclock.PNG)
+![TimeClock](./Assets/Images/time.PNG)
 
 # Deployed Site 
-https://wixkedluck.github.io/Weather-Dashboard/
+https://wixkedluck.github.io/Time-Clock/
 
 
 
