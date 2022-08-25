@@ -35,7 +35,6 @@ StartWork.addEventListener("click", function () {
 EndWork.addEventListener("click", function () {
     var currentTime = moment().format();
     var current = moment().format('LTS');
-    EnWork =current;
     console.log(EndWork);
     if (TimeStart == undefined) {
         Message.innerHTML = ("Please Clock in First!! ");
@@ -43,6 +42,7 @@ EndWork.addEventListener("click", function () {
             Message.innerHTML = '';
         }, 3000);
     } else {
+        EnWork =current;
         Message.innerHTML = ("You Ended Work at " + current);
         setTimeout(function () {
             Message.innerHTML = '';
